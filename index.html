@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Davine Coffee House</h1>
+    </header>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#menu">Menu</a> 
+        <a href="#price ">Pricing</a>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+        <h2 style="color:aliceblue;">Welcome to Our Coffee Shop</h2>
+        <p>Discover the finest coffee in town.</p>
+    </div>
+        <div class="learn-more">
+            <p>Welcome to Your Coffee Shop, where you can enjoy the finest coffee in a cozy atmosphere.</p>
+            <a href="more.html"><button>Learn More</button></a>
+        </div>
+   
+          
+    </section>
+
+
+
+
+
+    <section id="about">
+        <h1>About Us</h1>
+         <div class="image-text-wrapper">
+         <img src="images/cofee2.jpeg" alt="Coffee Shop Image">
+           
+                 <p>Discover a haven where passion meets perfection in every cup. 
+                    At Davine coffee Shop, we are more than just a coffee destination; 
+                    we are an experience. From meticulously sourced beans to expertly crafted brews, 
+                    our commitment to excellence is evident in every sip. Step into a cozy atmosphere, 
+                    indulge in the rich aromas, and make moments memorable with us. 
+                    Your perfect coffee moment awaits. Cheers!
+
+                    </p>
+
+                    
+         </div>
+            
+    </section>
+
+
+<section id="menu">
+    <div class="image-grid">
+        <div class="image-info">
+          <img src="images/cofee2.jpeg" alt="Coffee 1">
+          <p class="price">350sh</p>
+          <p class="price">Cappucciino</p>
+          <button class="order-button">Order Now</button>
+        </div>
+    
+        <div class="image-info">
+          <img src="images/coffe1.jpg" alt="Coffee 2">
+          <p class="price">400sh</p>
+          <p class="price">Latte</p>
+          <button class="order-button">Order Now</button>
+        </div>
+    
+        <div class="image-info">
+          <img src="images/coffee.webp" alt="Coffee 3">
+          <p class="price">350sh</p>
+          <p class="price">Americano</p>
+          <button class="order-button">Order Now</button>
+        </div>
+    
+        <div class="image-info">
+          <img src="images/coffee4.jpg" alt="Coffee 4">
+          <p class="price">500sh</p>
+          <p class="price">Expresso</p>
+          <button class="order-button">Order Now</button>
+        </div>
+    
+        <div class="image-info">
+          <img src="images/coffee3.jpg" alt="Coffee 5">
+          <p class="price">400sh</p>
+          <p class="price">Machiata</p>
+          <button class="order-button">Order Now</button>
+        </div>
+    
+        <div class="image-info">
+          <img src="images/coffee4.jpg" alt="Coffee 6">
+          <p class="price">300sh</p>
+          <p class="price">Macha</p>
+          <button class="order-button">Order Now</button>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+<section id="contact">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="footer">
+    <div class="footer">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Services</a>
+          <a href="#">FAQ</a>
+        </div>
+    
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <div class="footer-icons">
+            <div class="icon">&#x1F4CD;</div> <!-- Location icon -->
+            <a href="#">123 Street, City</a>
+          </div>
+          <div class="footer-icons">
+            <div class="icon">&#x260E;</div> <!-- Contact icon -->
+            <a href="#">(123) 456-7890</a>
+          </div>
+          <div class="footer-icons">
+            <div class="icon">&#9993;</div> <!-- Email icon -->
+            <a href="mailto:info@example.com">info@example.com</a>
+          </div>
+        </div>
+      </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        <script>
+            var images=[
+
+            "url('images/coffee.webp')",
+            "url('images/coffe1.jpg')",
+            "url('images/coffee3.jpg')",
+          
+            ]
+            function changeBackground() {
+                var bg = images[Math.floor(Math.random() * images.length)];
+                document.getElementById('home').style.backgroundImage = bg;
+            }
+    
+            // Change background every  5 secondsc:\Users\hp\Downloads\coffe1.jpg c:\Users\hp\Downloads\coffee4.jpg c:\Users\hp\Downloads\coffee3.jpg c:\Users\hp\Downloads\logo.jpg
+            setInterval(changeBackground, 2000);
+    
+            // Initial background change
+            changeBackground();
+        </script>
+    
+    </body>
+    </html>
